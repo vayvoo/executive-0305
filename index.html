@@ -7,6 +7,7 @@
     <title>Executive - study abroad</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 <body>
     <header class="site-header">
@@ -42,13 +43,13 @@
     <section class="universities">
         <div class="universities-container container">
             <h3 class="universities-title">Featured Universities</h3>
-            <ul class="logo-carousel">
-                <li class="univer-logos"><img class="unniver-logos-img" src="img/mas-logo.png" alt="Masquarie logo" width="225" height="67"></li>
-                <li class="univer-logos"><img class="unniver-logos-img" src="img/charles-logo.png" alt="Charles logo" width="250" height="64"></li>
-                <li class="univer-logos"><img class="unniver-logos-img" src="img/newcastle-logo.png" alt="New castle logo" width="224" height="79"></li>
-                <li class="univer-logos"><img class="unniver-logos-img" src="img/latrobe-logo.png" alt="la trobe logo" width="275" height="62"></li>
-            </ul>
-            <img class="carousel-dot-img" src="img/carousel-dot.png" alt="Dotted img" width="107" height="14">
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><a href="#" target="_blank" rel="noopener noreferrer"><img src="img/mas-logo.png" alt="Masquarie logo" width="225" height="67"></a></div>
+                <div class="gallery-cell"><a href="#" target="_blank" rel="noopener noreferrer"><img src="img/charles-logo.png" alt="Charles logo" width="250" height="64"></a></div>
+                <div class="gallery-cell"><a href="#" target="_blank" rel="noopener noreferrer"><img src="img/newcastle-logo.png" alt="newcastle logo" width="224" height="79"></a></div>
+                <div class="gallery-cell"><a href="#" target="_blank" rel="noopener noreferrer"><img src="img/latrobe-logo.png" alt="latrobe logo" width="275" height="62"></a></div>
+            </div>
         </div>
     </section>
     <section class="services">
@@ -107,5 +108,6 @@
             <button class="join-btn btn" type="button">Join Here</button>
         </div>
     </section>
+    <script src="js/carousel.js"></script>
 </body>
 </html>

@@ -178,9 +178,6 @@ body{
     background-color: #FAFAFA;
 }
 .universities-container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding-top: 55px;
     padding-bottom: 57px;
 }
@@ -190,6 +187,7 @@ body{
     letter-spacing: 2.1px;
     text-transform: uppercase;
     color: #373737;
+    text-align: center;
     opacity: 0.73;
     padding-bottom: 86px;
 }
@@ -386,3 +384,15 @@ body{
     color: #FFFFFF;
     background: #717CFF;
 }
+
+/* CAROUSEL */
+
+.gallery{
+    padding-bottom: 183px;
+}
+.gallery-cell {
+    width: 250px;
+    height: 60px;
+    margin-right: 74px;
+}
+
