@@ -33,6 +33,7 @@
     --text-color: #7D7D7D;
     --blue-color: #717CFF;
     --white-color: #FFFFFF;
+    --font-family: "Roboto", "Arial", sans-serif;
 }
 
 /* GLOBAL */
@@ -44,5 +45,118 @@ html{
     box-sizing: inherit;
 }
 body{
-    
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width: 1183px;
+    margin: 0 auto;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    margin-bottom: 140px;
+}
+.logo-img{
+    display: block;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 175px;
+    padding: 9px 0 13px;
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--little-title-color);
+}
+.nav-item{
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 20px;
+}
+.nav-item:not(:first-child){
+    margin-left: 68px;
+}
+.btn{
+    border-radius: 11px;
+}
+.apply-btn{
+    margin-left: 72px;
+    padding: 9px 32px 13px 35px;
+    font-size: 17px;
+    line-height: 20px;
+    background-color: #FFFFFF;
+    color: #505050;
+    border: 2px solid #717CFF;
+    border-radius: 11px;
+}
+
+/* HERO */
+.hero-container{
+    display: flex;
+}
+.hero-info{
+    width: 632px;
+    margin-bottom: 54px;
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 66px;
+    color: var(--title-color);
+    margin-bottom: 15px;
+}
+.hero-feature{
+    color: var(--blue-color);
+}
+.hero-text{
+    color: var(--text-color);
+    margin-bottom: 42px;
+    font-size: 22px;
+    line-height: 38px;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    padding: 12px 32px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    line-height: 40px;
+    white-space: nowrap;
+    border: none;
+    color: #FFFFFF;
+    background: #717CFF;
+}
+.hero-btn::after{
+    content: "";
+    background: url("../img/arrow-icon.svg");
+    width: 28px;
+    height: 26px;
+    margin-left: 30px;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+}
+.social-link:not(:first-child){
+    margin-left: 23px;
+}
+.fb{
+    width: 13px;
+    height: 21px;
+}
+.hero-img{
+    background: url("../img/student-girl.png"), url("../img/Oval.png");
+    width: 470px;
+    height: 565px;
 }
