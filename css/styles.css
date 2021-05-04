@@ -191,18 +191,16 @@ body{
     opacity: 0.73;
     padding-bottom: 86px;
 }
-.logo-carousel{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    padding-bottom: 104px;
+
+/* University CAROUSEL */
+
+.university-carousel{
+    padding-bottom: 183px;
 }
-.univer-logos:not(:first-child){
-    margin-left: 74px;
-}
-.carousel-dot-img{
-    
+.uni-carousel-item {
+    width: 250px;
+    height: 60px;
+    margin-right: 74px;
 }
 
 /* OUR SERVICES */
@@ -221,6 +219,9 @@ body{
 .description{
     text-align: center;
     color: #7D7D7D;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
 }
 .services-title{
     padding-bottom: 25px;
@@ -259,12 +260,6 @@ body{
     font-weight: bold;
     font-size: 24px;
     line-height: 37px;
-}
-.card-desc{
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 0.444444px;
-    color: rgba(55, 71, 79, 0.721569);
 }
 .card-link{
     display: flex;
@@ -385,14 +380,273 @@ body{
     background: #717CFF;
 }
 
-/* CAROUSEL */
-
-.gallery{
-    padding-bottom: 183px;
+/* EVENTS */
+.events{
+    padding-bottom: 108px;
 }
-.gallery-cell {
-    width: 250px;
-    height: 60px;
-    margin-right: 74px;
+.section-info{
+    width: 949px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.events-title{
+    margin-bottom: 25px;
+}
+.event-desc{
+    margin-bottom: 100px;
+    
+}
+.events-card-list{
+    padding-bottom: 152px;
+}
+.event-card{
+    width: 540px;
+    padding: 29px 28px 31px 31px;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    margin-right: 78px;
+}
+.event-card-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.event-card-date{
+    width: 76px;
+    height: 76px;
+    margin: 0;
+    padding: 10px 22px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--blue-color);
+    background: rgba(113, 124, 255, 0.14);
+    mix-blend-mode: normal;
+    border-radius: 11px;
+}
+.event-card-title{
+    margin-left: 19px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 37px;
+    color: #37474F;
+}
+.event-card-desc{
+    margin-bottom: 25px;
+}
+.cards-desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.444444px;
+    color: rgba(55, 71, 79, 0.721569);
+}
+.event-card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.event-card-time{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: right;
+    letter-spacing: 0.444444px;
+    color: #373737;
+}
+.event-card-time::before{
+    content: "";
+    margin-right: 5px;
+    background: url("../img/time-icon.svg");
+    width: 24px;
+    height: 24px;
 }
 
+/* COUNTRIES SECTION */
+
+.countries{
+    background: #FAFAFA;
+}
+.countries-container{
+    padding-top: 46px;
+    padding-bottom: 87px;
+}
+.countries-title{
+    margin-bottom: 25px;
+}
+.countries-desc{
+    margin-bottom: 77px;
+}
+.country-carousel{
+    padding-bottom: 141px;
+}
+.country-card{
+    width: 348px;
+    margin-right: 46px;
+}
+.country-card-title{
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    color: #37474F;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials-container{
+    margin-top: 0;
+    padding-top: 115px;
+}
+.testimonial-title{
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.testimonial-desc{
+    margin-bottom: 140px;
+}
+.testimonial-card{
+    width: 503px;
+    margin-right: 61px;
+    padding: 39px 34px 40px 34px;
+}
+.testimonial-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.testimonial-header::before{
+    content: "";
+    width: 62px;
+    height: 62px;
+    margin-right: 28px;
+}
+.ainara{
+    background: url("../img/Ainara-img.png") no-repeat;
+}
+.harrison{
+    background: url("../img/harrison-img.png") no-repeat;
+}
+.niek{
+    background: url("../img/Nielson-img.png") no-repeat;
+}
+.author-name{
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 26px;
+    color: #37474F;
+}
+.job-title{
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #37474F;
+    mix-blend-mode: normal;
+    opacity: 0.65;
+}
+.testimonial-desc{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 31px;
+    color: rgba(55, 71, 79, 0.721569);
+}
+
+/* QUESTION SECTION */
+
+.question{
+    background: #FAFAFA;
+}
+.question-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 82px;
+    padding-bottom: 74px;
+}
+.question-text{
+    margin: 0;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 43px;
+    color: #252525;
+}
+.question-btn{
+    display: flex;
+    align-items: center;
+    padding: 12px 32px;
+    font-size: 22px;
+    line-height: 40px;
+    white-space: nowrap;
+    border: none;
+    color: #FFFFFF;
+    background: #717CFF;  
+}
+
+/* SITE FOOTER */
+
+.site-footer{
+    background-color: var(--blue-color);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 45px;
+}
+.footer-info{
+    width: 343px;
+    margin-right: 10px;
+}
+.footer-logo-img{
+    margin-bottom: 28px;
+}
+.footer-text{
+    font-size: 18px;
+    line-height: 32px;
+    color: #EEEEEE;
+}
+.address{
+    margin: 0;
+    margin-bottom: 58px;
+    font-weight: 500;
+}
+.copyright{
+    margin: 0;
+    font-weight: bold;
+}
+.footer-middle-nav{
+    margin-right: 10px;
+}
+.footer-end-nav{
+    margin-right: 10px;
+}
+.footer-nav{
+    margin: 0;
+    list-style: none;
+}
+.footer-link{
+    text-decoration: none;
+    color: var(--white-color);
+}
+.footer-items{
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 49px;
+    white-space: nowrap;
+    color: #EEEEEE;
+}
+.footer-social-links{
+    margin-bottom: 60px;
+    align-self: flex-end;
+}
+.footer-social-links:not(:last-child){
+    margin-right: 28px;
+}
